@@ -9,9 +9,10 @@ Last Update:  13 Nov 2020
 2020-11-13:  Removed the ability to filter based on collection vs. owned because we want this only searching GCOM's collection.
 
 ****Things to change****
-- Need to change how "Filter expansions" looks.  Adjust table to make it look like original BGG search site.
 - Need to add an option to sort the results.  sort=rank, sort=title, sort=bggrating, sort=avgrating
 - Need to add sort ascending vs decending option.  sortdir=asc, sortdir=desc
+- Get designer and manufacturer to show up properly (auto fill)
+
 -->
 <title>GCOM Library Search</title>
 <link rel="stylesheet" type="text/css" href="https://cf.geekdo-static.com/static/geekui_master2_5f2c56d8c326e.css">
@@ -205,16 +206,16 @@ Last Update:  13 Nov 2020
 			<span aria-hidden="true">user weight ratings</span>
 			</td>
 	  </tr>
-		<tr>
+	<!--<tr>
 		
 <!-- Possibly remove this section-->
 
 		
-		
+	<!--	
 	<td width="25%" align="right"><b>Filter by Collection</b></td>
 	<td width="75%">
 		<table>
-		<!--
+		
 			<tbody><tr>
 				<td>
 					<label class="fwn sr-only" for="filter-none">Not Filtered</label>
@@ -237,10 +238,9 @@ https://www.boardgamegeek.com/search/boardgame?sort=title&advsearch=1&q=&include
 				</td>
 			</tr>
 		</tbody></table>
-		--->
 		<input id="filter-owned" name="colfiltertype" type="hidden" value="owned" checked=""> <span aria-hidden="true"></span>
 		<input id="filter-searchuser" type="hidden" name="searchuser" value="gamesclubofmd"></td>
-</tr>
+	</tr>-->
 	  <tr>
 	    <td aria-hidden="true" width="25%" align="right"><b>Filter Expansions</b></td>
 		<td width="75%">
